@@ -1,0 +1,133 @@
+:root {
+  --main-green: #2d992d;
+  --main-gray: #303841;
+  --main-white: #fff;
+  --lion: #b38a58;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  background-color: var(--main-green);
+  padding: 20px 50px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4%;
+}
+
+.nav-link {
+  color: var(--main-white);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#welcome-section {
+	background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h1, h2 {
+  font-family: 'Raleway', serif;
+	color: var(--main-white);
+  font-weight: 700;
+}
+
+#welcome-section p {
+	color: var(--main-green);
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+#projects-title {
+  border-bottom: 2px solid #fff;
+  font-size: 42px;
+  display: inline-block;
+  margin: 0 auto 60px auto;
+}
+
+#projects {
+  background-color: var(--lion);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.project-tile {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0 0 0 / 0.5);
+  border-radius: 2px;
+  color: var(--main-white);
+  font-size: 20px
+}
+
+.project-tile-desc {
+  padding-top: 10px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-tile-image {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 68px);
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-bottom: 60px;
+}
+
+#profile-link {
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+  height: 50px;
+}
+
+#profile-link a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 488px) {
+  #nav-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
